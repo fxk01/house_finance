@@ -28,4 +28,6 @@ npm test
 ```
 
 
+解决谷歌跨域问题 --args --disable-web-security --user-data-dir
+
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
