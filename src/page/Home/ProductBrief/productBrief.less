@@ -1,0 +1,227 @@
+@textColor: #8a6f4d;
+@borderColor: #cecece;
+.product-brief {
+  .slide {
+    .van-swipe__indicator {
+      width: 24px;
+      height: 12px;
+      border-radius: 6px;
+    }
+    .van-swipe__indicator:not(:last-child) {
+      margin-right: 8px;
+    }
+    .van-swipe__indicator--active {
+      width: 40px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .light-spot {
+    height: 208px;
+    background-color: #fff;
+    > ul {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      > li {
+        width: 25%;
+        text-align: center;
+          > div {
+            width: 95px;
+            height: 95px;
+            background-color: #d7bf8d;
+            border-radius: 50%;
+            margin: 0 auto;
+            margin-bottom: 10px;
+            >img {
+              width: 100%;
+            }
+          }
+          span {
+            color: @textColor;
+          }
+      }
+    }
+  }
+  .open-city {
+    background-color: #efeff4;
+    > .title {
+      height: 70px;
+      background-color: #8b6f4e;
+      line-height: 70px;
+      color: #fff;
+      padding-left: 60px;
+      margin-bottom: 10px;
+      >img {
+        width: 28px;
+        height: 35px;
+      }
+      > .open {
+        margin-left: 28px;
+      }
+      > .city {
+        margin-left: 60px;
+      }
+    }
+    > .norm {
+      margin-bottom: 10px;
+      >.title {
+        img {
+          width: 48px;
+          height: 32px;
+        }
+      }
+    }
+    > .flow {
+      >.title {
+        img {
+          width: 45px;
+          height: 46px;
+        }
+      }
+    }
+    > .norm,
+    > .flow {
+      padding-left: 46px;
+      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      // height: 423px;
+      > .title {
+        height: 78px;
+        line-height: 78px;
+        padding-top: 4px;
+        color: #8b6f4e;
+        font-weight: bold;
+        border-bottom: 1px solid #8b6f4e;
+        > span {
+          margin-left: 30px;
+        }
+      }
+      > .content {
+        color: #8b6f4e;
+        padding-bottom: 20px;
+        .c-item {
+        padding: 0px 20px;
+        margin-top: 20px;
+        h3 {
+          margin-bottom: 10px;
+        }
+        p {
+            padding-left: 20px;
+            margin-bottom: 10px;
+          }
+        }
+        img {
+          width: 100%;
+        }
+      }
+    }
+    > .button {
+      text-align: center;
+      padding: 30px;
+      > .submit {
+        display: inline-block;
+        border: none;
+        width: 100%;
+        height: 72px;
+        background-color: #f79a19;
+        border-radius: 6px;
+        line-height: 72px;
+        font-size: 28px;
+        color: #fff;
+      }
+    }
+  }
+}
+#proBrief {
+  .van-tabs {
+    padding-top: 80px;
+    .van-tabs__wrap {
+      height: 80px;
+      border-bottom: 1px solid #e0e0e0;
+      .van-tab {
+        line-height: 80px;
+        font-size: 24px;
+      }
+      .van-tab--active {
+        color: #ff7c12;
+      }
+    }
+    .van-tabs__content {
+      
+      .van-tab__pane {
+        padding: 40px 0px 130px 24px;
+        background-color: #fff;
+      }
+    }
+  }
+  .title-bar {
+    display: flex;
+    align-items: center;
+    i {
+      z-index: 2;
+      width: 54px;
+      height: 54px;
+      text-align: center;
+      line-height: 54px;
+      border-radius: 50%;
+      background: linear-gradient(to right,#fb9c4f,#fec56f);
+      img {
+        width: 26px;
+        height: 26px;
+        margin-bottom: 2px;
+      }
+    }
+    span {
+      background: linear-gradient(to right,#fb9c4f,#fec56f);
+      color: #fff;
+      height: 44px;
+      line-height: 44px;
+      border-radius: 22px;
+      padding: 0 30px 0 45px;
+      margin-left: -30px;
+    }
+    img.vip {
+      width: 463px;
+      height: 49px;
+    }
+  }
+  .content-bar {
+    padding-top: 34px;
+    margin-bottom: 50px;
+    .flex-ul {
+      display: flex;
+      justify-content: space-around;
+      li {
+        text-align: center;
+        img {
+          width: 100px;
+          height: 100px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+  .tips {
+    color: #a9a9a9;
+  }
+  .order {
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    .van-button {
+      width: 100%;
+      height: 98px;
+      background: linear-gradient(to bottom right,#ff8c00,#ff6d00);
+      line-height: 98px;
+      color: #fff;
+      font-size: 32px
+    }
+  }
+}

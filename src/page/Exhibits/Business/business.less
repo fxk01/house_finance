@@ -1,0 +1,88 @@
+.business {
+  padding-bottom: 95px;
+  header {
+    background-color: #f6f6f7;
+    padding: 35px 0;
+    overflow-x: scroll;
+    box-shadow: 0px 0px 5px 5px #ccc;
+    border-top: 1px solid #ccc;
+    min-height: 95px;
+    img {
+      width: 72px;
+      height: 72px;
+    }
+    p {
+      font-size: 24px;
+      color: #000;
+    }
+    ul li {
+      text-align: center;
+      margin-right: 60px;
+      min-height: 59.5px;
+    }
+    ul li:last-child {
+      margin-right: 0;
+    }
+    p {
+      margin-top: 15px;
+    }
+  }
+  main {
+    margin-top: 20px;
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: start;
+      margin: 0 auto;
+      >li {
+        width: 200px;
+        margin: 25px;
+        img {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+  .business-img {
+    width: 196px;
+    height: 250px;
+    margin-bottom: 20px;
+  }
+  .business-text {
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .business-text2 {
+    vertical-align: middle;
+    display: inline-block;
+    margin-left: 87px;
+  }
+  ul .business-li-wrap:nth-child(3n) {
+    margin-right: 0;
+  }
+  .business-li-wrap {
+    margin: 0 30px 35px 0;
+  }
+  .business-overflow-x {
+    margin: 0 60px;
+    width: 100%;
+    display: inline-flex;
+  }
+  .business-not-data {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 24px;
+    color: #999;
+  }
+  [v-cloak] {
+    display: none;
+  }
+  .active {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 8px #fff;
+  }
+}

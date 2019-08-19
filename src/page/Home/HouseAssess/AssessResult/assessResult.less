@@ -1,0 +1,94 @@
+#Aresult {
+  .result {
+      padding: 26px 20px;
+      padding-bottom: 40px;
+      background-color: #fff;
+    .content {
+        background-color: #fff;
+        padding: 36px 30px;
+        padding-bottom: 0;
+        border-radius: 15px;
+        box-shadow: 0px 0px 20px 5px #ccc;
+        .title {
+            margin-bottom: 25px;
+            border-left: 10px solid #ff8100;
+            padding-left: 20px;
+            font-size: 32px;
+            line-height: 32px;
+            font-weight: normal;
+        }
+        .info,.score {
+            margin-bottom: 25px;
+        }
+      .van-cell-group {
+          padding-left: 30px;
+        &::after {
+          border: none;
+        }
+
+        .van-cell {
+          height: 60px;
+          line-height: 60px;
+          padding: 0;
+          font-size: 24px;
+
+          .van-cell__title {
+            max-width: 120px;
+          }
+
+          .van-cell__value {
+            padding-right: 10px;
+          }
+        }
+      }
+      .sum {
+          background: url('../../../../assets/img/scoreBG.png') no-repeat center/contain;
+          height: 169px;
+          margin: 0 -30px;
+          text-align: center;
+          color: #fff;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          font-size: 32px;
+          p {
+              font-size: 100px;
+              span {
+                  font-size: 32px;
+              }
+          }
+      }
+    }
+    .tips {
+        margin-top: 35px;
+        padding-left: 5px;
+        font-size: 24px;
+    }
+  }
+  .enter {
+      min-height: 475px;
+      padding: 47px 28px;
+      background-color: #fff;
+      margin-top: 20px;
+      .van-button {
+          width: 100%;
+          height: 88px;
+          line-height: 88px;
+          color: #fff;
+          font-size: 32px;
+          margin-bottom: 40px;
+          border: none;
+          border-radius: 6px;
+      }
+      .btn1 {
+          background: linear-gradient(to bottom,#ff8d00,#ff7500);
+      }
+      .btn2 {
+        background: linear-gradient(to bottom,#3facf9,#1492ed);
+      }
+      .btn3 {
+          border: 2px solid #b5b3b4;
+          color: #999999;
+      }
+  }
+}

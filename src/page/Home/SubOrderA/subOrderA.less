@@ -1,0 +1,513 @@
+@textColor: #8a6f4d;
+@borderColor: #cecece;
+
+.sub-orderA {
+  min-height: 100vh;
+  background-color: #fff;
+  padding-bottom: 30px;
+  .protocol {
+    background-color: #fff;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+
+    .agree {
+      font-size: 24px;
+      display: inline;
+
+      >span {
+        color: #ff953f;
+      }
+    }
+
+    input[type="checkbox"] {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 3px;
+    }
+  }
+
+
+  .bor-info {
+    // margin-top: 25px;
+    background-color: #fff;
+    // padding-left: 45px;
+    // border-top: 1px solid @borderColor;
+    // border-bottom: 1px solid @borderColor;
+    // padding-top: 24px;
+    // padding-bottom: 36px;
+
+    .van-cell__title {
+      max-width: 200px;
+      font-size: 28px;
+    }
+
+    .info-title {
+      height: 55px;
+      line-height: 55px;
+      font-size: 30px;
+      padding-left: 15px;
+      font-weight: 400;
+      color: @textColor;
+      border-bottom: 1px solid @textColor;
+
+      >img {
+        width: 35px;
+        height: 30px;
+        margin-bottom: 7px;
+        margin-right: 20px;
+      }
+    }
+
+    .van-cell {
+      padding: 0 20px;
+      height: 90px;
+      line-height: 90px;
+
+      input {
+        font-size: 24px;
+      }
+    }
+
+    .van-hairline--top-bottom::after {
+      display: none;
+    }
+  }
+
+  .goods-info {
+    >.info-title {
+      >img {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    .van-cell__title {
+      span {
+        display: inline-block;
+        width: 273px;
+        height: 52px;
+        background-color: #c39956;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 52px;
+      }
+    }
+
+    .van-icon {
+      line-height: 52px;
+
+      &::before {
+        transform: rotate(0deg);
+      }
+    }
+
+    .house {
+      .van-cell {
+        padding-bottom: 16px;
+        border-bottom: 1px solid #cecece;
+      }
+    }
+
+    .area {
+      border-bottom: 1px solid #cecece;
+
+      input {
+        color: @textColor;
+      }
+    }
+
+    .show-area {
+      .van-picker__toolbar {
+        height: 80px;
+        line-height: 80px;
+        padding: 0 30px;
+        border-bottom: 1px solid #f5f6f8;
+      }
+    }
+
+    .photo {
+      display: flex;
+      padding-top: 15px;
+      flex-wrap: wrap;
+
+      >h2 {
+        //width: 100%;
+        margin-bottom: 30px;
+        font-size: 28px;
+        padding-left: 14px;
+      }
+
+      .item {
+        flex: 1;
+        text-align: center;
+
+        img {
+          width: 299px;
+          height: 231px;
+          margin-bottom: 10px;
+        }
+      }
+
+      .file {
+        display: none;
+      }
+    }
+  }
+
+  .price-info {
+    >.info-title {
+      >img {
+        width: 42px;
+        height: 35px;
+      }
+    }
+
+    .p-price {
+      .van-field__body {
+        position: relative;
+
+        &::before {
+          content: '万元';
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+
+    .p-date {
+      .van-field__body {
+        position: relative;
+
+        &::before {
+          content: '个月';
+          position: absolute;
+          right: 0;
+        }
+      }
+    }
+
+  }
+
+  .submit-btn {
+    width: 90%;
+    background-color: #ff7c12;
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+    font-size: 36px;
+    color: #fff;
+    display: block;
+    margin: 30px auto 0;
+  }
+
+  .betAgree {
+    width: 90%;
+    border-radius: 10px;
+    padding: 60px 50px;
+    height: 80%;
+
+    >.contain {
+      height: 100%;
+      overflow: scroll;
+
+      >h2 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      >div {
+        font-size: 28px;
+
+        p {
+          margin-bottom: 20px;
+          text-indent: 56px;
+        }
+
+        .bold {
+          font-weight: bold;
+        }
+
+        .line {
+          text-decoration: underline;
+        }
+
+        .mt20 {
+          margin-top: 40px;
+        }
+      }
+
+      .fixed {
+        position: absolute;
+        right: 20px;
+        top: 10px;
+        width: 40px;
+        text-align: center;
+        font-size: 50px;
+      }
+    }
+  }
+  .upload-img {
+    width: 60.5%;
+    text-align: right;
+    text-decoration: underline;
+    color: #ff7c12;
+    font-size: 26px;
+  }
+  .uploadModal {
+    width:661px;
+    height:1266px;
+    background:rgba(255,255,255,1);
+    border-radius:10px;
+    padding: 0 35px 0 41px;
+    line-height: 1;
+    .title {
+      font-size:36px;
+      font-family:PingFang-SC-Bold;
+      font-weight:bold;
+      color:rgba(0,0,0,1);
+      margin-top: 38px;
+      margin-bottom: 44px;
+      text-align: center;
+    }
+    .describe1 {
+      font-size: 28px;
+      font-family: PingFang-SC-Regular;
+      font-weight: 400;
+      color: rgba(0,0,0,1);
+    }
+    .describe2 {
+      font-size: 22px;
+      font-family: PingFang-SC-Regular;
+      font-weight: 400;
+      color: rgba(255,122,0,1);
+    }
+    .example {
+      margin-top: 19px;
+      margin-bottom: 58px;
+      //border: 2px dashed #000;
+    }
+    .example img {
+      width: 100%;
+    }
+    .upload-ask {
+      font-size: 28px;
+      font-family: PingFang-SC-Bold;
+      font-weight: bold;
+      color: rgba(0,0,0,1);
+      margin-bottom: 16px;
+    }
+    ul li {
+      font-size: 24px;
+      font-family: PingFang-SC-Regular;
+      font-weight: 400;
+      color: rgba(51,51,51,1);
+      line-height: 39px;
+    }
+    .but {
+      width: 100%;
+      height: 88px;
+      background: rgba(255,122,0,1);
+      border-radius: 4px;
+      border: none;
+      font-size:36px;
+      font-family:PingFang-SC-Regular;
+      font-weight:400;
+      color:rgba(255,255,255,1);
+      margin-top: 40.25px;
+    }
+    .van-image-preview__index {
+      font-size: 26px;
+    }
+  }
+}
+
+.van-checkbox {
+  .van-checkbox__icon {
+    .van-icon {
+      border: 2px solid #ff7c12;
+      border-radius: 3px;
+      width: 24px;
+      height: 24px;
+      font-size: 24px;
+
+      &::before {
+        text-align: center;
+      }
+    }
+  }
+
+  .van-checkbox__icon--checked {
+    .van-icon {
+      background-color: #ff7c12;
+    }
+  }
+}
+
+.none-btn {
+  .van-checkbox__icon {
+    .van-icon {
+      border: 2px solid #ccc;
+    }
+  }
+}
+
+.fast {
+  padding-top: 20px;
+
+  >h2 {
+    min-height: 40px;
+    line-height: 40px;
+    >div {
+      padding: 0 20px;
+      display: flex;
+      height: 40px;
+      font-size: 24px;
+      font-weight: normal;
+      >span {
+        color: #ff7c12;
+        padding-left: 30px;
+        padding-top: 2px;
+      }
+    }
+
+  }
+
+  .fast-assess {
+    padding-top: 10px;
+
+    &::after {
+      border: none;
+    }
+
+    .van-cell {
+      height: 90px;
+      line-height: 90px;
+      border-bottom: 1px solid #e1e1e1;
+      padding: 0 20px;
+      font-size: 28px;
+
+      .van-cell__title {
+        max-width: 240px;
+      }
+
+      .van-cell__value {
+        padding-right: 10px;
+      }
+
+      .van-icon {
+        line-height: 90px;
+      }
+    }
+  }
+}
+
+.search {
+  width: 100%;
+  height: 100%;
+  padding-top: 30px;
+}
+
+#searchPage {
+  text-align: center;
+  >h2 {
+    font-size: 32px;
+    font-weight: normal;
+  }
+  .van-search {
+    padding: 20px 0px 20px 20px;
+    background-color: #fff !important;
+
+    .van-cell {
+      background-color: #f6f6f7;
+      padding: 0 16px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 24px;
+      border-radius: 35px;
+
+      .van-icon {
+        line-height: 70px;
+        font-size: 32px;
+        margin-right: 10px;
+      }
+    }
+    .van-search__action {
+      padding: 0;
+      >div {
+        padding: 20px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .cancelBtn {
+    width: 93%;
+    height: 80px;
+    line-height: 80px;
+    border: none;
+    background: linear-gradient(to right bottom, #3dabf8, #1693ee);
+    color: #fff;
+    font-size: 32px;
+  }
+
+  .list {
+    text-align: center;
+    font-size: 28px;
+    color: #000;
+
+    li {
+      padding: 20px 0;
+    }
+
+    li:nth-child(2n) {
+      background-color: #fff;
+    }
+
+    p {
+      padding: 50px 0;
+    }
+    .againBtn {
+      width: 40%;
+      height: 60px;
+      line-height: 60px;
+      border: none;
+      background-color: transparent;
+      border: 2px solid #cccccc;
+      color: #000;
+      font-size: 28px;
+      margin-top: 50px;
+    }
+  }
+}
+.urban {
+
+    .van-icon {
+      line-height: 90px;
+    }
+}
+[v-cloak] {
+  display: none !important;
+}
+.city-list {
+  width: 80%;
+  border-radius: 10px;
+  padding-top: 30px;
+  >h2 {
+    text-align: center;
+    font-size: 28px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    li {
+      width: 33.3%;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 24px;
+    }
+  }
+}

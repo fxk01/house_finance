@@ -1,0 +1,207 @@
+@textColor: #8a6f4d;
+@borderColor: #cecece;
+.share-order {
+  .header {
+    padding: 40px 30px;
+  }
+  .my-info {
+    background-color: #fff;
+    padding-left: 45px;
+    border-top: 1px solid @borderColor;
+    border-bottom: 1px solid @borderColor;
+    padding-top: 24px;
+    padding-bottom: 36px;
+    .info-title {
+      height: 65px;
+      line-height: 55px;
+      font-size: 30px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      font-weight: 400;
+      color: @textColor;
+      border-bottom: 1px solid @textColor;
+      > img {
+        width: 36px;
+        height: 36px;
+        margin-right: 20px;
+        margin-bottom: 3px;
+      }
+    }
+    .van-cell {
+      padding-top: 20px;
+      padding-bottom: 0;
+      .van-cell__title {
+        width: 330px;
+        font-size: 28px;
+        color: #000;
+        max-width: 330px;
+        line-height: 70px;
+      }
+      input {
+        padding-right: 50px;
+        font-size: 28px;
+        height: 70px;
+      }
+    }
+    .van-hairline--top-bottom::after {
+      display: none;
+    }
+  }
+  .assess {
+    margin-top: 15px;
+    background-color: #fff;
+    padding-left: 45px;
+    border-top: 1px solid @borderColor;
+    border-bottom: 1px solid @borderColor;
+    padding-top: 24px;
+    padding-bottom: 36px;
+    .info-title {
+      height: 65px;
+      line-height: 55px;
+      font-size: 30px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      font-weight: 400;
+      color: @textColor;
+      border-bottom: 1px solid @textColor;
+      > img {
+        margin-right: 20px;
+        width: 36px;
+        height: 36px;
+      }
+    }
+    .van-cell__title {
+      span {
+        display: inline-block;
+        width: 220px;
+        height: 52px;
+        background-color: #c39956;
+        color: #fff;
+        border-radius: 10px;
+        text-align: center;
+        line-height: 52px;
+      }
+    }
+    .van-icon {
+      line-height: 52px;
+      &::before {
+        transform: rotate(0deg);
+      }
+    }
+    .house {
+      .van-cell {
+        padding-top: 32px;
+      }
+    }
+    .van-hairline--top-bottom::after {
+      display: none;
+    }
+  }
+  .project {
+    margin-top: 15px;
+    background-color: #fff;
+    padding-left: 45px;
+    border-top: 1px solid @borderColor;
+    border-bottom: 1px solid @borderColor;
+    padding-top: 24px;
+    padding-bottom: 64px;
+    .info-title {
+      height: 65px;
+      line-height: 55px;
+      font-size: 30px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      font-weight: 400;
+      color: @textColor;
+      border-bottom: 1px solid @textColor;
+      > img {
+        margin-right: 20px;
+        width: 32px;
+        height: 36px;
+        margin-bottom: 3px;
+      }
+    }
+    .van-cell {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      textarea {
+        height: 160px;
+        &::placeholder {
+          line-height: 32px;
+        }
+      }
+    }
+    .van-hairline--top-bottom::after {
+      display: none;
+    }
+  }
+  .credit {
+    margin-top: 15px;
+    background-color: #fff;
+    padding-left: 45px;
+    border-top: 1px solid @borderColor;
+    border-bottom: 1px solid @borderColor;
+    padding-top: 24px;
+    padding-bottom: 64px;
+    .info-title {
+      height: 65px;
+      line-height: 55px;
+      font-size: 30px;
+      padding-left: 15px;
+      padding-bottom: 10px;
+      font-weight: 400;
+      color: @textColor;
+      border-bottom: 1px solid @textColor;
+      > img {
+        margin-right: 20px;
+        width: 32px;
+        height: 36px;
+        margin-bottom: 3px;
+      }
+    }
+    .condition {
+        .item {
+          margin-top: 30px;
+            .item-title {
+                background-color: #f4f0ea;
+                width: 90%;
+                color: @textColor;
+                padding: 8px 25px;
+                border-radius: 6px;
+                img {
+                    margin-right: 20px;
+                    width: 32px;
+                    height: 32px;
+                    margin-bottom: 3px;
+                }
+            }
+            .item-content {
+              width: 90%;
+              .van-cell {
+                height: 100px;
+                padding: 0 10px;
+                line-height: 100px;
+                border-bottom: 1px solid #ccc;
+                .van-cell__title {
+                  color: #8b714e;
+                  font-size: 28px;
+                }
+                .van-icon {
+                  line-height: 100px;
+                  margin-left: 50px;
+                }
+              }
+            }
+        }
+    }
+  }
+  .sub-order {
+    padding: 30px;
+    .van-button {
+      background-color: #f79a19;
+      color: #fff;
+      height: 75px;
+      font-size: 32px;
+    }
+  }
+}

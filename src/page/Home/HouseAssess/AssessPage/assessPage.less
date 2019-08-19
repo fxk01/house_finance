@@ -1,0 +1,161 @@
+#houseAssess {
+  .van-cell-group {
+    padding-left: 24px;
+    padding-right: 20px;
+
+    &::after {
+      border: none;
+    }
+
+    .van-cell {
+      height: 100px;
+      line-height: 100px;
+      border-bottom: 1px solid #e1e1e1;
+      padding: 0;
+      font-size: 28px;
+
+      .van-cell__title {
+        max-width: 240px;
+      }
+
+      .van-cell__value {
+        padding-right: 10px;
+      }
+
+      .van-icon {
+        line-height: 100px;
+      }
+    }
+  }
+
+  .assess {
+    padding: 45px 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+
+    .van-button {
+      width: 330px;
+      height: 80px;
+      color: #fff;
+      line-height: 80px;
+      border-radius: 5px;
+      font-size: 28px;
+      border: none;
+    }
+
+    .quick-btn {
+      background: linear-gradient(to right bottom, #ff8d00, #ff7600);
+    }
+
+    .common-btn {
+      background: linear-gradient(to right bottom, #3eacf9, #1693ee);
+    }
+    .none-btn {
+        background: #ccc;
+        color: #fff;
+    }
+  }
+
+  .rule {
+    margin-top: 20px;
+    padding: 40px 20px;
+    background-color: #fff;
+
+    h2 {
+      font-size: 32px;
+      font-weight: normal;
+      color: #000;
+    }
+
+    div,
+    p {
+      color: #555;
+      margin-bottom: 14px;
+    }
+
+    div {
+      margin-top: 40px;
+    }
+  }
+
+  .search {
+    width: 100%;
+    height: 100%;
+    padding-top: 30px;
+  }
+}
+
+#searchPage {
+    text-align: center;
+    >h2 {
+      font-size: 32px;
+      font-weight: normal;
+    }
+  .van-search {
+    padding: 20px 0px 20px 20px;
+    background-color: #fff !important;
+
+    .van-cell {
+      background-color: #f6f6f7;
+      padding: 0 16px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 24px;
+      border-radius: 35px;
+
+      .van-icon {
+        line-height: 70px;
+        font-size: 32px;
+        margin-right: 10px;
+      }
+    }
+    .van-search__action {
+      padding: 0;
+      >div {
+        padding: 20px;
+        font-size: 24px;
+      }
+    }
+  }
+
+  .cancelBtn {
+    width: 93%;
+    height: 80px;
+    line-height: 80px;
+    border: none;
+    background: linear-gradient(to right bottom,#3dabf8,#1693ee);
+    color: #fff;
+    font-size: 32px;
+  }
+
+  .list {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 28px;
+    color: #000;
+
+    li {
+      padding: 20px 0;
+    }
+
+    li:nth-child(2n) {
+      background-color: #fff;
+    }
+
+    p {
+      padding: 50px 0;
+    }
+    .againBtn {
+      width: 40%;
+      height: 60px;
+      line-height: 60px;
+      border: none;
+      background-color: transparent;
+      border: 2px solid #cccccc;
+      color: #000;
+      font-size: 28px;
+      margin-top: 50px;
+    }
+  }
+}

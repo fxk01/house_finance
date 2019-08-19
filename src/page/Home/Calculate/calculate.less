@@ -1,0 +1,195 @@
+@textColor: #8a6f4d;
+@borderColor: #cecece;
+
+.calculate {
+
+  .bor-info,
+  .plan {
+    margin-top: 40px;
+    background-color: #fff;
+    padding-left: 45px;
+    border-top: 1px solid @borderColor;
+    border-bottom: 1px solid @borderColor;
+    padding-top: 30px;
+    padding-bottom: 36px;
+
+    .info-title {
+      height: 55px;
+      line-height: 55px;
+      font-size: 30px;
+      padding-left: 15px;
+      font-weight: 400;
+      color: @textColor;
+      border-bottom: 1px solid @textColor;
+
+      &.jiekuai {
+        >img {
+          width: 42px;
+          height: 35px;
+          margin-right: 25px;
+          margin-bottom: 5px;
+        }
+      }
+      &.jihua {
+        >img {
+          width: 32px;
+          height: 36px;
+          margin-right: 25px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+
+    .van-cell {
+      padding-bottom: 0;
+      padding-right: 40px;
+
+      &.must {
+        .van-cell__title {
+
+          &::before {
+            content: '*';
+            color: red;
+            position: absolute;
+            right: 40px;
+            font-size: 32px;
+            top: 50%;
+            transform: translateY(-44%);
+          }
+        }
+
+      }
+
+      .van-cell__title {
+        width: 210px;
+        font-size: 24px;
+        color: #000;
+        max-width: 210px;
+        line-height: 75px;
+        position: relative;
+
+      }
+
+      .van-field__body {
+        position: relative;
+
+        input {
+          padding-right: 70px;
+          font-size: 24px;
+          height: 70px;
+
+          &::placeholder {
+            color: #cccccc;
+            font-size: 24px;
+          }
+        }
+
+        &::before {
+          color: #323232;
+          position: absolute;
+          right: 0;
+          font-size: 24px;
+        }
+        .van-field__icon {
+          .van-icon {
+            font-size: 32px;
+          }
+        }
+      }
+    }
+
+    .b-price {
+      .van-field__body::before {
+        content: '万元';
+      }
+    }
+
+    .b-date {
+      .van-field__body::before {
+        content: '个月';
+      }
+    }
+
+    .b-rate {
+      .van-field__body::before {
+        content: '%';
+      }
+    }
+
+    .van-hairline--top-bottom::after {
+      display: none;
+    }
+  }
+
+  .plan {
+    min-height: 400px;
+
+    .p-table {
+      padding-top: 20px;
+      padding-right: 15px;
+
+      table {
+        border-collapse: collapse;
+        width: 100%;
+        color: @textColor;
+        text-align: center;
+
+        thead {
+          background-color: #f3f0ed;
+
+          td {
+            padding: 5px 0;
+            position: relative;
+
+            &:not(:last-of-type)::before {
+              content: '';
+              position: absolute;
+              width: 2px;
+              height: 20px;
+              right: 0;
+              background-color: #d3c9bd;
+              top: 50%;
+              transform: translateY(-50%);
+            }
+          }
+
+          .td1 {
+            width: 95px;
+          }
+
+          .td2 {
+            width: 235px;
+          }
+
+          .td3 {
+            width: 180px;
+          }
+        }
+        tbody {
+          td {
+            padding-top: 35px;
+          }
+        }
+      }
+    }
+  }
+
+  .hint {
+    margin: 20px 0;
+    padding-left: 48px;
+    color: #cdcdcd;
+  }
+
+  .btn {
+    padding: 0 30px 30px;
+
+    button {
+      height: 76px;
+      background-color: #d7bf8d;
+      border-radius: 6px;
+      color: #fff;
+      font-size: 32px;
+      line-height: 76px;
+    }
+  }
+}
